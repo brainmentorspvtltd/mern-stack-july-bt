@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: rgb(52, 131, 157);
+            color: white;
+            text-align: center;
+        }
+        span, p{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .left{
+            background-color: white;
+            text-align: center;
+            width: 28%;
+            height: calc(100vh - 100px);
+        }
+        .right{
+            background-color: white;
+            width: 68%;
+        }
+        .left, .right{
+            border-radius: 10px;
+            box-shadow: 0 2px 4px gray;
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<header>My Web Resume</header>    
+<section>
+    <div class="left">
+        Left
+    </div>
+    <div class="right">
+        <p>Right</p>
+    </div>
+</section>
+<footer>&copy; 2025 Arun Kumar &#65;</footer>
+</body>
+</html>
