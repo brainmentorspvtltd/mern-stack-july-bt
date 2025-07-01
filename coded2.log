@@ -1,0 +1,378 @@
+var a = 10;
+undefined
+typeof a;
+'number'
+typeof (a);
+'number'
+typeof (10+20);
+'number'
+typeof (((10+20)*90));
+'number'
+a='Amit';
+'Amit'
+typeof a;
+'string'
+a = 100;
+100
+a+ 200;
+300
+a;
+100
+var marks = [100,90, 88, 66];
+undefined
+typeof marks;
+'object'
+marks.length;
+4
+marks.push(70);
+5
+marks;
+(5) [100, 90, 88, 66, 70]
+marks instanceof Array;
+true
+typeof Array;
+'function'
+var obj = {};
+
+undefined
+typeof obj;
+'object'
+obj instanceof Object;
+true
+typeof Object;
+'function'
+var arr = [10,20,30];
+undefined
+typeof arr;
+'object'
+arr instanceof Array;
+true
+arr instanceof Object;
+true
+obj;
+{}
+obj instanceof Array;
+false
+obj;
+{}
+var amit = {id : 1001 , name:'Amit', city:'Delhi'};
+undefined
+typeof amit;
+'object'
+amit.id;
+1001
+amit.name;
+'Amit'
+amit.city;
+'Delhi'
+delete amit.city;
+true
+amit;
+{id: 1001, name: 'Amit'}
+amit.location = 'New Delhi';
+'New Delhi'
+amit;
+{id: 1001, name: 'Amit', location: 'New Delhi'}
+arr;
+(3) [10, 20, 30]
+arr[2];
+30
+amit.name;
+'Amit'
+var virat = {age:38, 100: 55, 50: 70};
+undefined
+virat.age;
+38
+virat.100;
+VM1684:1 Uncaught SyntaxError: Unexpected number
+virat[100];
+55
+virat.home address = 'Mumbai' 
+VM1787:1 Uncaught SyntaxError: Unexpected identifier 'address'
+virat["home address"] = 'Mumbai' ;
+'Mumbai'
+virat;
+{50: 70, 100: 55, age: 38, home address: 'Mumbai'}
+virat["home address"];
+'Mumbai'
+var key = 'age';
+undefined
+virat[key];
+38
+virat.key;
+undefined
+virat;
+{50: 70, 100: 55, age: 38, home address: 'Mumbai'}
+for(var k in virat){
+    console.log(k);
+}
+VM2092:2 50
+VM2092:2 100
+VM2092:2 age
+VM2092:2 home address
+undefined
+for(var k in virat){
+    console.log(k , virat[k]);
+}
+VM2146:2 50 70
+VM2146:2 100 55
+VM2146:2 age 38
+VM2146:2 home address Mumbai
+undefined
+function add(){
+    console.log("I am the Add ");
+}
+undefined
+typeof add;
+'function'
+var e = add;
+undefined
+e;
+ƒ add(){
+    console.log("I am the Add ");
+}
+typeof e;
+'function'
+add();
+VM2223:2 I am the Add 
+undefined
+e();
+VM2223:2 I am the Add 
+undefined
+add(10,20,30);
+VM2223:2 I am the Add 
+undefined
+add();
+VM2223:2 I am the Add 
+undefined
+add("Hello", true);
+VM2223:2 I am the Add 
+undefined
+console.log(10,20,30);
+VM2565:1 10 20 30
+undefined
+console.log(10,20,"Amit");
+VM2589:1 10 20 'Amit'
+undefined
+console.log(10,20,"Amit", [90,100,44]);
+VM2614:1 10 20 'Amit' (3) [90, 100, 44]
+undefined
+function add(){
+    console.log("I am the add");
+}
+add();
+
+
+
+
+
+
+
+
+VM2736:2 I am the add
+undefined
+add(10,20,30);
+VM2736:2 I am the add
+undefined
+console.dir(add);
+VM2874:1 ƒ add()length: 0name: "add"prototype: {}arguments: nullcaller: null[[FunctionLocation]]: VM2736:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function add(){
+    console.log("I am the add ", arguments.length);
+}
+add();
+
+
+
+
+
+
+
+
+VM2968:2 I am the add  0
+undefined
+add(10,20);
+VM2968:2 I am the add  2
+undefined
+add(10,20, 30, "40", [900,100]);
+VM2968:2 I am the add  5
+undefined
+function add(){
+    //console.log("I am the add ", arguments.length);
+    var sum = 0;
+    for(var i = 0 ; i<arguments.length ; i++){
+        sum  =sum + arguments[i];
+    }
+    return sum;
+}
+add(10,20,30,40,50);
+
+
+
+
+
+
+
+
+150
+function add(){
+    //console.log("I am the add ", arguments.length);
+    var sum = 0;
+    for(var i = 0 ; i<arguments.length ; i++){
+        sum  =sum + arguments[i];
+    }
+    return sum;
+}
+add(10,20,30,"40",50);
+
+
+
+
+
+
+
+
+'604050'
+function add(){
+    //console.log("I am the add ", arguments.length);
+    var sum = 0;
+    for(var i = 0 ; i<arguments.length ; i++){
+        sum  =sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+add(10,20,30,"40",50);
+
+
+
+
+
+
+
+
+150
+function add(){
+    //console.log("I am the add ", arguments.length);
+    var sum = 0;
+    for(var i = 0 ; i<arguments.length ; i++){
+        sum  =sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+add(10,20,30,"amit",50);
+
+
+
+
+
+
+
+
+NaN
+isNaN(parseInt("amit"));
+true
+function add(){
+    //console.log("I am the add ", arguments.length);
+    var sum = 0;
+    for(var i = 0 ; i<arguments.length ; i++){
+        sum  =sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return sum;
+}
+add(10,20,30,"amit",50);
+
+
+
+
+
+
+
+
+110
+function jQuery(){
+    
+}
+var $ = jQuery;
+
+undefined
+function getBanner(fn){
+    // get the banner data from the flipkart server
+    fn();
+}
+getBanner(function(){
+    // print the banner
+})
+undefined
+var arr = [10,20,30, 50 ];
+undefined
+arr.forEach(function(){
+    console.log('Array Item ');
+});
+VM3787:2 Array Item 
+VM3787:2 Array Item 
+VM3787:2 Array Item 
+VM3787:2 Array Item 
+undefined
+arr.forEach(function(e){
+    console.log('Array Item ',e);
+});
+VM3800:2 Array Item  10
+VM3800:2 Array Item  20
+VM3800:2 Array Item  30
+VM3800:2 Array Item  50
+undefined
+arr.forEach(function(e, i){
+    console.log('Array Item ',e , i);
+});
+VM3822:2 Array Item  10 0
+VM3822:2 Array Item  20 1
+VM3822:2 Array Item  30 2
+VM3822:2 Array Item  50 3
+undefined
+arr.forEach(function(e, i, t){
+    console.log('Array Item ',e , i, t);
+});
+VM3853:2 Array Item  10 0 (4) [10, 20, 30, 50]
+VM3853:2 Array Item  20 1 (4) [10, 20, 30, 50]
+VM3853:2 Array Item  30 2 (4) [10, 20, 30, 50]
+VM3853:2 Array Item  50 3 (4) [10, 20, 30, 50]
+undefined
+arr;
+(4) [10, 20, 30, 50]
+arr.filter(function(e){
+    return e>20;
+});
+(2) [30, 50]
+arr.filter(function(e){
+    return e>20;
+}).length;
+2
+function show(){
+    console.log(b);
+    if(10>2){
+    var b = 1000;
+    }
+    console.log(b);
+}
+undefined
+show();
+VM4066:2 undefined
+VM4066:6 1000
+undefined
+var t ;
+function show(){
+    //var b;
+    console.log(b);
+    if(10>2){
+        //b = 1000;
+    var b = 1000;
+    }
+    console.log(b);
+}
+undefined
+test();
+function test(){
+    console.log("I am the test ");
+}
+VM4223:3 I am the test 
+undefined
