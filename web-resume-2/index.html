@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header, footer{
+            background-color: rgb(0,123,255);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 0 5px gray;
+        }
+        section{
+            display: flex;
+        }
+        #left-bar, #right-bar{
+            /*
+            box-shadow: 0 0 5px gray;
+            border: 1px solid black;
+            */
+            box-shadow: 0 0 3px black;
+            margin: 10px 5px;
+            height: calc(100vh - 120px);
+        }
+        #left-bar{
+            width: 30%;
+        }
+        #right-bar{
+            width: 70%;
+            padding: 10px;
+        }
+        #left-bar > ul li{
+            list-style: none;
+        }
+        #pp{
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+/*
+        @media screen and (max-width: 768px) {
+            #left-bar{
+                background-color: red;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            #left-bar{
+                background-color: green;
+            }
+        }
+            */
+            @media screen and (max-width: 768px) {
+                section{
+                    flex-direction: column;
+                }
+                #left-bar, #right-bar{
+                    width: 100%;
+                }
+            }
+    </style>
+</head>
+<body>
+
+    <header>This is header</header>
+    <section>
+        <div id="left-bar">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: Demo@gmail.com</li>
+                <li>Phone: +91 675348346784</li>
+                <li>City: Pune, India</li>
+            </ul>
+        </div>
+        <div id="right-bar">
+            <img id="pp" src="https://placehold.co/400x400/EEE/31343C" />
+            <h1>Ramesh Kapoor</h1>
+            <p>Passionate web development student learning to build modern websites using simple and clean HTML and CSS.</p>
+
+            <h2>Education</h2>
+            <p>B. Tech in Computer Science, MIT University, Pune</p>
+            <p>2022 - Present</p>
+        </div>
+    </section>
+    <footer> &copy; This is footer</footer>
+</body>
+</html>
