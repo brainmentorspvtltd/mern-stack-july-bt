@@ -59,7 +59,42 @@ header{
 }
 
 #middle-div > div{
-    width: 130px;
-    background-color: gray;
+    width: 180px;
+    border: 1px solid black;
     margin: 5px;
+}
+
+.icon{
+    width: 80px;
+    font-size: 3rem;
+    color: rgb(45, 93, 46);
+}
+#abc{
+    position: relative;
+}
+.new-icon{
+    background-color: rgb(56, 131, 200);
+    position: absolute;
+    right: auto;
+    left: auto;
+    padding: 0 8px;
+    border: 1px solid black;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px 15px 15px 2px;
+}
+
+.anicss{
+    background-color: darkseagreen;
+}
+
+
+.property > img {
+    max-width: 100%;
+}
+
+.properties{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
 }
