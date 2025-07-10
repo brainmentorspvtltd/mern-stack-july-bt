@@ -19,3 +19,47 @@ header{
 #logo-container > img{
     width: 150px;
 }
+
+#header-btns{
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 10px;
+    align-items: center;
+}
+
+#header-btns > button{
+    height: 35px;
+    padding: 4px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+#header-btns > button:not(:first-child){
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    width: 35px;
+}
+#header-btns > button:first-child{
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+#header-btns > button:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+#middle-div{
+    border: 2px solid black;
+    display: flex;
+}
+
+#middle-div > div{
+    width: 130px;
+    background-color: gray;
+    margin: 5px;
+}
