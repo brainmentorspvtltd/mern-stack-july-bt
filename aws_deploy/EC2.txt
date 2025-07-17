@@ -1,0 +1,37 @@
+Aws account
+
+Create EC2 - os, instance type, key pair, networking (ssh myip)
+
+Ec2 instances
+	Connect
+		connect
+		3 tab -> ssh client
+			open git bash and move to location where key pair is saved
+			first and third commands copy paste in git bash
+
+Now you are in ec2 
+=> sudo dnf install nginx -y
+=> sudo dnf install git -y
+=> sudo dnf install wget -y
+
+sudo service nginx status
+
+sudo service nginx start
+
+
+ec2 ip-address -> browser
+
+To react code insert
+
+=> git clone http-url
+
+
+$ sudo su
+$ service nginx stop 
+$ cd /usr/share/nginx/html
+$ rm -rf *.*
+$ rm -rf icons
+
+$ cp /home/ec2-user/mern_ai_june2025/job-portal-app/hireup-job-final/react-job-portal/* /usr/share/nginx/html -r
+
+$ service nginx start 
