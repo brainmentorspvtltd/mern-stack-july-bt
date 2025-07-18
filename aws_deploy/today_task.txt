@@ -23,9 +23,11 @@ Create aws account
 				git remote origin "url"
 				git push -u master
 
-
 				open git bash -> where your project is stored
 				run commands
+				================
+				without aws
+				repo settings -> pages -> branch -> dir
 				================
 
 			git clone repo-url

@@ -5,7 +5,7 @@
 /**/.mtj.tmp/
 /**/*.class
 /**/bin/
-#/**/*.jar
+/**/*.jar
 /**/*.war
 /**/*.ear
 /**/*.nar
