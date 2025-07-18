@@ -1,0 +1,51 @@
+Create aws account
+- login - 2 way step authentication - iam
+- search ec2
+	- launch - os(AMI), instance type (t3.micro), key pair, networking
+	- running instances
+		- public ip address
+		- connect
+			- third tab - ssh client
+
+			- in your machine open git bash where keypair is stored
+			- 1st and 3rd copy paste
+
+			- sudo dnf install nginx -y
+			- sudo dnf install git -y
+
+				================
+				Github repo
+				- login -> create repo -> name
+
+				git add .
+				git commit -m "repo created"
+				=> create branch
+				git remote origin "url"
+				git push -u master
+
+
+				open git bash -> where your project is stored
+				run commands
+				================
+
+			git clone repo-url
+
+			/user/ec2-user/repo ==> 
+
+			cd /usr/share/nginx/html
+
+			sudo su
+			service nginx stop
+			rm -rf *.*
+			rm -rf icons
+			cp /user/ec2-user/repo/* /usr/share/nginx/html/ -r
+			service nginx start
+
+
+
+
+
+
+
+
+			
