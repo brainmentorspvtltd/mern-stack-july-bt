@@ -1,0 +1,7 @@
+post http://localhost:7777/api/v2/user/register
+content-type: application/json
+
+{
+    "name": "Ramesh",
+    "email": "ram@gmail.com"
+}
