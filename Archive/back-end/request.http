@@ -5,3 +5,24 @@ content-type: application/json
     "name": "Ramesh",
     "email": "ram@gmail.com"
 }
+
+### 
+
+post http://localhost:7777/api/v2/user/login
+content-type: application/json
+
+{
+    "name": "Ramesh",
+    "email": "ram@gmail.com"
+}
+
+###
+
+post http://localhost:7777/api/v2/user/6881cd300df7aeebfa2d1717/playlist
+content-type: application/json
+
+{
+    "name": "old is gold"
+}
+
+
