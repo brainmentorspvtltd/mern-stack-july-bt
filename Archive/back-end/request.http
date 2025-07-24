@@ -25,4 +25,12 @@ content-type: application/json
     "name": "old is gold"
 }
 
+###
 
+post http://localhost:7777/api/v2/music/add-song
+content-type: application/json
+
+{
+    "playlistId": "6881d69ff2408109e406b5b5",
+    "song_name": "Dost dost na raha"
+}
